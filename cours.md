@@ -99,18 +99,21 @@ rm -rf .git/
 git status
 ```
 
-#### 2. Ajouter tous les fichiers poru validation
+#### 2. Ajouter tous les fichiers liste d'attente d envoie
 ```
 git add .
 ```
 
-#### 3. Pour commit
+#### 3. Pour Valider la liste
 ```
 git commit
 git commit -m "message"
+
+# Annuler la validation
+git commit --amend
 ```
 
-#### 4. Synchro Locale en Ligne
+#### 4. Synchro Locale en Ligne de la liste validée
 ```
 git push -u origin main (or master)
 ```
@@ -121,3 +124,31 @@ git push -u origin main (or master)
 modifier le "gitignore" en rajouter par ligne le nom des fichiers et/ou dossier a ignorer
 ```
 
+#### Affiche les modifications effectuer
+```
+git diff
+```
+
+
+#### Effacer un fichier
+```
+1. rm "fichier"
+
+2. git status
+
+3. git rm "fichier"
+```
+-------------
+### Git Log
+
+Voici une liste de git log puissante :
+```
+git log -p -2
+git log --stat
+git log --pretty=oneline
+git log --pretty=format:"%h %s" --graph
+```
+#### Annuler les validations
+```
+git commit --amend
+```
