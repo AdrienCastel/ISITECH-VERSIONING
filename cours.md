@@ -90,12 +90,24 @@ git init
 rm -rf .git/
 ```
 
-#### Tous les fichiers a partir du repertoire pour commit
+-------------
+#### 1. Vérifier l'état du dépot
+```
+git status
+```
+
+#### 2. Ajouter tous les fichiers poru validation
 ```
 git add .
 ```
 
-#### Pour commit
+#### 3. Pour commit
 ```
 git commit
+git commit -m "message"
+```
+
+#### 4. Synchro Locale en Ligne
+```
+git push -u origin main
 ```
