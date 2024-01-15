@@ -94,17 +94,17 @@ rm -rf .git/
 
 -------------
 ## Mettre les fichiers locale en ligne
-#### 1. Vérifier l'état du dépot
+### 1. Vérifier l'état du dépot
 ```
 git status
 ```
-
-#### 2. Ajouter tous les fichiers liste d'attente d envoie
+-------------
+### 2. Ajouter tous les fichiers liste d'attente d envoie
 ```
 git add .
 ```
-
-#### 3. Pour Valider la liste
+-------------
+### 3. Pour Valider la liste (commit)
 ```
 git commit
 git commit -m "message"
@@ -112,8 +112,17 @@ git commit -m "message"
 # Annuler la validation
 git commit --amend
 ```
+#### Annuler les validations
+```
+git commit --amend
+```
 
-#### 4. Synchro Locale en Ligne de la liste validée
+#### Modifier le dernier commit
+```
+git reset HEAD "fichier"
+```
+-------------
+### 4. Synchro Locale en Ligne de la liste validée
 ```
 git push -u origin main (or master)
 ```
@@ -148,7 +157,17 @@ git log --stat
 git log --pretty=oneline
 git log --pretty=format:"%h %s" --graph
 ```
-#### Annuler les validations
+-------------
+### Tag
+#### Lister les Tags
 ```
-git commit --amend
+git tag
+```
+#### Créer un Tag sur le commit actuel
+```
+git tag -a v1.0 -m "Version 1.0"
+```
+#### Filtrer dans la liste
+```
+git tag -l "v1.8.5*"
 ```
