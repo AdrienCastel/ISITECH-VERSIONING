@@ -109,5 +109,5 @@ git commit -m "message"
 
 #### 4. Synchro Locale en Ligne
 ```
-git push -u origin main
+git push -u origin main (or master)
 ```
