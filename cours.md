@@ -89,3 +89,13 @@ git init
 ```
 rm -rf .git/
 ```
+
+#### Tous les fichiers a partir du repertoire pour commit
+```
+git add .
+```
+
+#### Pour commit
+```
+git commit
+```
