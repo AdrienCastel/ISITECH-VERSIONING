@@ -8,7 +8,9 @@ i = insertion
 
 echap = sortie insertion
 
-w = ecrire et quitter
+wq = save et quitter
+
+vim .(nomfichier) = entrer dans l edition du fichier
 
 -------------
 **Vocabulaire**
@@ -91,6 +93,7 @@ rm -rf .git/
 ```
 
 -------------
+## Mettre les fichiers locale en ligne
 #### 1. Vérifier l'état du dépot
 ```
 git status
@@ -111,3 +114,10 @@ git commit -m "message"
 ```
 git push -u origin main (or master)
 ```
+
+-------------
+#### Ignorer des fichiers
+```
+modifier le "gitignore" en rajouter par ligne le nom des fichiers et/ou dossier a ignorer
+```
+
