@@ -119,12 +119,13 @@ git commit --amend
 
 #### Modifier le dernier commit
 ```
-git reset HEAD "fichier"
+git reset HEAD <fichier>
 ```
 -------------
 ### 4. Synchro Locale en Ligne de la liste validée
 ```
 git push -u origin main (or master)
+git push
 ```
 
 -------------
@@ -141,11 +142,11 @@ git diff
 
 #### Effacer un fichier
 ```
-1. rm "fichier"
+1. rm <fichier>
 
 2. git status
 
-3. git rm "fichier"
+3. git rm <fichier>
 ```
 -------------
 ### Git Log
@@ -171,5 +172,9 @@ git tag -a v1.0 -m "Version 1.0"
 ```
 git tag -l "v1.8.5*"
 ```
-
-test
+-------------
+###  Branches
+#### Créer une Branche
+```
+git branch <nom de la branche>
+```
