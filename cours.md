@@ -234,5 +234,24 @@ git checkout experiment
 git rebase master
 
 tout l'historique a été supprimer de la branche sur laquelle on est situé
-
+Ca permet de linéariser l historique des commits
 Le rebase n'est a utilisé qu'en cas de besoin important à cause d'une quantité de branche
+
+#### Essate d extraire la branche client de la branche server et de la rebaser sur la branche master
+```
+git rebase --onto master server client
+```
+```
+git checkout master
+git merge client
+```
+On peut aussi rebaser server sur master
+```
+git rebase master server
+```
+Puis merge server dans master
+```
+git checkout master
+git merge server
+```
+### Ne Jamais rebase des modifications qui ont été publiées sur un server distant (push)
