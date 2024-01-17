@@ -178,3 +178,28 @@ git tag -l "v1.8.5*"
 ```
 git branch <nom de la branche>
 ```
+
+#### Merge
+```
+git merge <branch>
+```
+#### Envoyer les modifications sur une branche
+```
+git push <distant> <branche>
+git push origin master
+git push -u origin master
+```
+#### Récuperer les modifications
+```
+git fetch <distant>
+```
+#### Récupération des fichiers + fusion locale 
+```
+git pull <distant> <branche>
+```
+
+Lorsqu'on recup les branches distantes avec fetch, pas de création auto d'une branche locale,
+il faut créer la branche et la lié a la branche distante
+```
+git checkout -b <branche> <distant>/<branche>
+```
