@@ -203,3 +203,36 @@ il faut créer la branche et la lié a la branche distante
 ```
 git checkout -b <branche> <distant>/<branche>
 ```
+#### Raccourci de la commande au dessus
+```
+git checkout --track <distant>/<branche>
+```
+#### Se connecter sur une branche
+```
+git checkout <branche>
+```
+#### Pour visualiser
+```
+git fetch -all
+git branch -vv
+```
+#### Supprimer une Branche en ligne et non Locale
+```
+git push origin --delete <branche>
+```
+-------------
+#### Deux manieres d integrer les modif d'une branche a une autre
+- La fusion (merge)
+- Le rebasage (rebase)
+
+merge :
+git checkout master
+git merge experiment
+
+rebase :
+git checkout experiment
+git rebase master
+
+tout l'historique a été supprimer de la branche sur laquelle on est situé
+
+Le rebase n'est a utilisé qu'en cas de besoin important à cause d'une quantité de branche
